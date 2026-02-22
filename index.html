@@ -5,60 +5,114 @@
 <title>Rijit Cloud Storage Platform</title>
 
 <style>
+
 body {
     margin: 0;
-    padding: 0;
-    background-color: #0d1117;
-    color: #ffffff;
     font-family: Arial, sans-serif;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    color: white;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.container {
+/* Header */
+.header {
     text-align: center;
+    margin-bottom: 30px;
 }
 
-h1 {
+.header h1 {
     font-size: 42px;
     color: #58a6ff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #c9d1d9;
-}
-
-p {
+.header p {
+    color: #8b949e;
     font-size: 18px;
+}
+
+/* Cards section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual card */
+.card {
+    background: #161b22;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #30363d;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #58a6ff;
+    box-shadow: 0 0 20px rgba(88,166,255,0.3);
+}
+
+/* Icon */
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
     color: #8b949e;
 }
 
-.icon {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
 </style>
 
 </head>
 
 <body>
 
-<div class="container">
-
-<div class="icon">☁️</div>
+<div class="header">
 
 <h1><b>Rijit Cloud Storage Platform</b></h1>
 
-<h2><b>AWS EC2, EBS and S3 Architecture</b></h2>
+<p><b>AWS EC2, EBS and S3 Secure Cloud Architecture</b></p>
 
-<p><b>Deployed using GitHub CI/CD and Netlify</b></p>
+</div>
+
+
+<div class="services">
+
+<div class="card">
+<div class="icon">🖥️</div>
+<h3>Amazon EC2</h3>
+<p>Provides scalable virtual servers to host applications securely.</p>
+</div>
+
+<div class="card">
+<div class="icon">💾</div>
+<h3>Amazon EBS</h3>
+<p>Persistent block storage for logs, databases, and system data.</p>
+</div>
+
+<div class="card">
+<div class="icon">☁️</div>
+<h3>Amazon S3</h3>
+<p>Highly durable object storage for backups, media, and files.</p>
+</div>
+
+</div>
+
+
+<div class="footer">
+
+<p><b>CI/CD Enabled | Deployed using GitHub & Netlify</b></p>
 
 <p><b>Implemented by Rijit Ghosh</b></p>
 
