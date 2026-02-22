@@ -1,264 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rijit Cloud Storage Platform</title>
+<meta charset="UTF-8">
+<title>Rijit Cloud Storage Platform</title>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
-      line-height: 1.6;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    header {
-      background: linear-gradient(90deg, #0d1117, #161b22);
-      padding: 40px;
-      text-align: center;
-      border-bottom: 2px solid #30363d;
-    }
+    height: 100vh;
+}
 
-    header h1 {
-      font-size: 42px;
-      color: #58a6ff;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
+.container {
+    text-align: center;
+}
 
-    header p {
-      font-size: 18px;
-      color: #8b949e;
-    }
+h1 {
+    font-size: 42px;
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
 
-    section {
-      padding: 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #c9d1d9;
+}
 
-    .card {
-      background: #161b22;
-      padding: 25px;
-      margin-bottom: 25px;
-      border-radius: 12px;
-      border: 1px solid #30363d;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
+p {
+    font-size: 18px;
+    color: #8b949e;
+}
 
-    .card h2 {
-      color: #58a6ff;
-      font-size: 26px;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+</style>
 
-    .card h3 {
-      color: #79c0ff;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    .icon {
-      font-size: 30px;
-      color: #58a6ff;
-      margin-right: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #161b22;
-      border-top: 1px solid #30363d;
-      color: #8b949e;
-    }
-
-    .highlight {
-      color: #58a6ff;
-      font-weight: bold;
-    }
-
-  </style>
 </head>
+
 <body>
 
-<header>
-  <h1><i class="fas fa-cloud icon"></i>RIJIT CLOUD STORAGE PLATFORM</h1>
-  <p><b>Secure Cloud Architecture using AWS EC2, EBS, S3, GitHub Actions and Netlify</b></p>
-</header>
+<div class="container">
 
-<section>
+<div class="icon">☁️</div>
 
-  <div class="card">
-    <h2><i class="fas fa-server icon"></i>PROJECT OVERVIEW</h2>
-    <p>
-      This project demonstrates the implementation of a <span class="highlight">complete cloud storage architecture</span> using Amazon Web Services and DevOps tools.
-      It includes compute, storage, automation, and deployment components.
-    </p>
+<h1><b>Rijit Cloud Storage Platform</b></h1>
 
-    <h3><b>Objectives</b></h3>
-    <ul>
-      <li>Deploy virtual server using Amazon EC2</li>
-      <li>Attach persistent storage using Amazon EBS</li>
-      <li>Store files using Amazon S3</li>
-      <li>Implement CI/CD pipeline using GitHub Actions</li>
-      <li>Deploy website using Netlify</li>
-    </ul>
-  </div>
+<h2><b>AWS EC2, EBS and S3 Architecture</b></h2>
 
-  <div class="card">
-    <h2><i class="fab fa-aws icon"></i>AMAZON EC2 (ELASTIC COMPUTE CLOUD)</h2>
+<p><b>Deployed using GitHub CI/CD and Netlify</b></p>
 
-    <h3><b>Description</b></h3>
-    <p>
-      Amazon EC2 provides scalable virtual servers in the cloud. It allows hosting applications securely and reliably.
-    </p>
+<p><b>Implemented by Rijit Ghosh</b></p>
 
-    <h3><b>Features</b></h3>
-    <ul>
-      <li>Virtual Linux server</li>
-      <li>Secure SSH access</li>
-      <li>Scalable compute power</li>
-      <li>High availability</li>
-    </ul>
-
-    <h3><b>Use Case</b></h3>
-    <p>
-      Used to host cloud applications, websites, and backend services.
-    </p>
-
-  </div>
-
-  <div class="card">
-    <h2><i class="fas fa-hdd icon"></i>AMAZON EBS (ELASTIC BLOCK STORAGE)</h2>
-
-    <h3><b>Description</b></h3>
-    <p>
-      Amazon EBS provides persistent block storage for EC2 instances. Data remains safe even if instance stops.
-    </p>
-
-    <h3><b>Features</b></h3>
-    <ul>
-      <li>Persistent storage</li>
-      <li>High performance</li>
-      <li>Secure data storage</li>
-      <li>Easy backup</li>
-    </ul>
-
-    <h3><b>Use Case</b></h3>
-    <p>
-      Used for storing databases, logs, and application files.
-    </p>
-
-  </div>
-
-  <div class="card">
-    <h2><i class="fas fa-database icon"></i>AMAZON S3 (SIMPLE STORAGE SERVICE)</h2>
-
-    <h3><b>Description</b></h3>
-    <p>
-      Amazon S3 provides highly durable object storage for storing files, backups, and media.
-    </p>
-
-    <h3><b>Features</b></h3>
-    <ul>
-      <li>Highly durable storage</li>
-      <li>Unlimited scalability</li>
-      <li>Secure file storage</li>
-      <li>Global access</li>
-    </ul>
-
-    <h3><b>Use Case</b></h3>
-    <p>
-      Used for storing images, videos, backups, and static website files.
-    </p>
-
-  </div>
-
-  <div class="card">
-    <h2><i class="fas fa-code-branch icon"></i>CI/CD PIPELINE (GITHUB ACTIONS)</h2>
-
-    <h3><b>Description</b></h3>
-    <p>
-      CI/CD automates building, testing, and deploying applications.
-    </p>
-
-    <h3><b>Features</b></h3>
-    <ul>
-      <li>Automatic build</li>
-      <li>Automatic testing</li>
-      <li>Continuous integration</li>
-      <li>Continuous deployment</li>
-    </ul>
-
-    <h3><b>Use Case</b></h3>
-    <p>
-      Used in DevOps to automate software deployment process.
-    </p>
-
-  </div>
-
-  <div class="card">
-    <h2><i class="fas fa-globe icon"></i>NETLIFY DEPLOYMENT</h2>
-
-    <h3><b>Description</b></h3>
-    <p>
-      Netlify hosts websites and automatically deploys from GitHub repository.
-    </p>
-
-    <h3><b>Features</b></h3>
-    <ul>
-      <li>Automatic deployment</li>
-      <li>Free hosting</li>
-      <li>Fast global delivery</li>
-      <li>Secure HTTPS</li>
-    </ul>
-
-  </div>
-
-  <div class="card">
-    <h2><i class="fas fa-shield-alt icon"></i>SECURITY FEATURES</h2>
-
-    <ul>
-      <li>IAM access control</li>
-      <li>Secure SSH access</li>
-      <li>Encrypted storage</li>
-      <li>Access policies</li>
-    </ul>
-
-  </div>
-
-  <div class="card">
-    <h2><i class="fas fa-check-circle icon"></i>PROJECT RESULT</h2>
-
-    <ul>
-      <li>EC2 server successfully created</li>
-      <li>EBS storage attached and working</li>
-      <li>S3 storage working</li>
-      <li>CI/CD pipeline successful</li>
-      <li>Website deployed successfully</li>
-    </ul>
-
-  </div>
-
-</section>
-
-<footer>
-  <p><b>Developed by Rijit Ghosh | Cloud Engineer Project | AWS + DevOps Architecture</b></p>
-</footer>
+</div>
 
 </body>
 </html>
