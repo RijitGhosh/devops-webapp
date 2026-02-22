@@ -18,3 +18,9 @@ jobs:
 
       - name: Display success message
         run: echo "CI Pipeline executed successfully for Rijit Cloud Storage App"
+
+      - name: Send notification to Slack
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{"text":"CI/CD Success: Rijit Cloud Storage Platform deployed successfully"}' \
+          ${{ secrets.SLACK_WEBHOOK }}
