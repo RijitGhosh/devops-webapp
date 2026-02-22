@@ -15,41 +15,36 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-/* Header */
-.header {
     text-align: center;
-    margin-bottom: 30px;
 }
 
-.header h1 {
-    font-size: 42px;
+/* Title */
+
+h1 {
     color: #58a6ff;
-    margin-bottom: 10px;
+    font-size: 42px;
+    margin-bottom: 5px;
 }
 
-.header p {
+.subtitle {
     color: #8b949e;
-    font-size: 18px;
+    margin-bottom: 40px;
 }
 
-/* Cards section */
-.services {
+/* Cards */
+
+.container {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-/* Individual card */
 .card {
     background: #161b22;
     padding: 25px;
-    width: 220px;
+    width: 240px;
     border-radius: 10px;
-    text-align: center;
     border: 1px solid #30363d;
-
     transition: 0.3s;
 }
 
@@ -59,16 +54,32 @@ body {
     box-shadow: 0 0 20px rgba(88,166,255,0.3);
 }
 
-/* Icon */
-.icon {
-    font-size: 40px;
-    margin-bottom: 10px;
+/* Status indicator */
+
+.status {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #2ea043;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(46,160,67,0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(46,160,67,0); }
+    100% { box-shadow: 0 0 0 0 rgba(46,160,67,0); }
 }
 
 /* Footer */
+
 .footer {
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     color: #8b949e;
 }
 
@@ -78,33 +89,50 @@ body {
 
 <body>
 
-<div class="header">
-
 <h1><b>Rijit Cloud Storage Platform</b></h1>
 
-<p><b>AWS EC2, EBS and S3 Secure Cloud Architecture</b></p>
+<div class="subtitle">
+<b>AWS EC2, EBS and S3 Secure Cloud Architecture</b>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🖥️ Amazon EC2</h2>
+
+<p>Virtual compute server hosting cloud applications.</p>
+
+<div class="status">
+<span class="dot"></span> Running
+</div>
 
 </div>
 
 
-<div class="services">
-
 <div class="card">
-<div class="icon">🖥️</div>
-<h3>Amazon EC2</h3>
-<p>Provides scalable virtual servers to host applications securely.</p>
+
+<h2>💾 Amazon EBS</h2>
+
+<p>Persistent storage for logs, database and system data.</p>
+
+<div class="status">
+<span class="dot"></span> Storage Active
 </div>
 
-<div class="card">
-<div class="icon">💾</div>
-<h3>Amazon EBS</h3>
-<p>Persistent block storage for logs, databases, and system data.</p>
 </div>
 
+
 <div class="card">
-<div class="icon">☁️</div>
-<h3>Amazon S3</h3>
-<p>Highly durable object storage for backups, media, and files.</p>
+
+<h2>☁️ Amazon S3</h2>
+
+<p>Secure object storage for backup and media files.</p>
+
+<div class="status">
+<span class="dot"></span> Storage Available
+</div>
+
 </div>
 
 </div>
@@ -112,7 +140,7 @@ body {
 
 <div class="footer">
 
-<p><b>CI/CD Enabled | Deployed using GitHub & Netlify</b></p>
+<p><b>CI/CD Pipeline Active | Auto Deploy Enabled</b></p>
 
 <p><b>Implemented by Rijit Ghosh</b></p>
 
